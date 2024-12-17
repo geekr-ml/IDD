@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infectious Disease Prediction</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+        .navbar {
+            background-color: #00695c;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+        .hero {
+            background: linear-gradient(to right, #004d40, #00796b);
+            color: white;
+            padding: 60px 0;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.25rem;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section:nth-child(even) {
+            background-color: #ffffff;
+        }
+        .section:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #004d40;
+            font-weight: bold;
+        }
+        .card {
+            border: 1px solid #ced4da;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            color: #004d40;
+        }
+        .btn-primary {
+            background-color: #00796b;
+            border-color: #00796b;
+        }
+        .btn-primary:hover {
+            background-color: #004d40;
+            border-color: #004d40;
+        }
+        footer {
+            background-color: #004d40;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #80cbc4;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Infectious Disease Diagnosis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#models">Prediction Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center">
+        <div class="container">
+            <h1>Infectious Disease Diagnosis</h1>
+            <p>Advancing healthcare with machine learning models for accurate diagnosis and treatment predictions.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <!-- <h2 class="section-title">About Us</h2> -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>Our platform utilizes advanced machine learning techniques to provide reliable predictions for infectious diseases. With a focus on explainability and optimization, we aim to support healthcare professionals in making informed decisions.</p>
+                </div>
+                <div class="col-md-6">
+                    <img style= "border:2px solid #00796b" src="AI doctor.webp" alt="Medical AI" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="models" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Prediction Models</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong> Severity Prediction</strong></h5>
+                            <p class="card-text">Predict the severity of COVID-19 cases to assist in prioritizing patient care and resources.</p>
+                            <a href="https://covidseverity.onrender.com/" class="btn btn-primary">Access Model</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Early Infection Detection</strong></h5>
+                            <p class="card-text">Accurate detection of influenza infections using patient health indicators.</p>
+                            <a href="https://flutest.onrender.com/" class="btn btn-primary">Access Model</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong> Treatment Outcome Prediction</strong></h5>
+                            <p class="card-text">Predict treatment outcomes for Tuberculosis to enhance patient management strategies.</p>
+                            <a href="https://tb-treatment-prediction.onrender.com/" class="btn btn-primary">Access Model</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="text-center mb-4">Have questions or need more information? Get in touch with us!</p>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email Address" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary px-5">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Infectious Disease Diagnosis. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
